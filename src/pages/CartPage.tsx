@@ -33,9 +33,14 @@ const CartPage = () => {
                 ))}
             </div>
             <div className="mt-8 flex gap-4 justify-center">
-                <Link to="/products" className="bg-gray-300 px-4 py-2 rounded">← Continue Shopping</Link>
-                <button className="bg-blue-500 text-white px-6 py-2 rounded">Checkout (Coming Soon)</button>
+                <Link to="/products" className="bg-gray-300 px-4 py-2 rounded">
+                    ← Continue Shopping
+                </Link>
+                <Link to="/checkout" className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">
+                    Proceed to Checkout →
+                </Link>
             </div>
+
         </div>
     )
 }
